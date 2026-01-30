@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Form</title>
 
-  <link rel="icon" href="public/img/star.png">
-  <link rel="stylesheet" href="public/styles/style.css">
+  <link rel="icon" href="/img/star.png">
+  <link rel="stylesheet" href="/styles/style.css">
 
 </head>
 
@@ -19,37 +19,38 @@
 
     <form>
 
-      <label>
-      First Name: 
+
+      <label id="first" for="fname">
+      First Name
           <input type="text" id="fname" name="fname">
       </label>
 
-      <label>
-      Last Name: 
+      <label id="last" for="lname">
+      Last Name
           <input type="text" id="lname" name="lname">
       </label>
 
-      <label>
-      Job Title: 
+      <label id="job" for="jtitle">
+      Job Title
           <input type="text" id="jtitle" name="jtitle">
       </label>
 
-      <label>
-      Company: 
+      <label id="com" for="company">
+      Company
           <input type="text" id="company" name="company">
       </label>
 
-      <label>
-      LinkedIn URL: 
+      <label id="linklabel" for="linkedin">
+      LinkedIn URL
           <input type="text" id="linkedin" name="linkedin">
       </label>
 
-      <label>
-      Email Address: 
+      <label for="email" id="emaillabel">
+      Email Address
           <input type="text" id="email" name="email">
       </label>
 
-      <label>
+      <label for="meet" id = "meetlabel">
         How did we meet?
         <select id="meet" name="meet">
           <option value="none">Please select</option>
@@ -61,25 +62,28 @@
         </select>
       </label>
 
-      <label>
-      Other (please specify):
+      <label for="other" id = "otherlabel">
+      Other (please specify)
           <input type="text" id="other" name="other">
       </label>
 
-      <label for="message">Message:
+      <label for="message" id = "messlabel">Message
           <textarea rows="5" id="message" name="message"></textarea>
       </label>
 
-      <label> <input type="checkbox" name="mlist" name="mlist" checked> Please add me to your mailing list </label>
+      <label for="mlist" id="mlabel"> <input type="checkbox" id="mlist" name="mlist" checked> Please add me to your mailing list </label>
 
-      <p>Please choose an email format:</p>
-      <label for="html">
-        <input type="radio" id="html" value="html" name="html"> HTML
-      </label>
+      <div id = "format">
+         <p>Choose an email format:</p>
+          <label for="html">
+            <input type="radio" id="html" value="html" name="format"> HTML
+          </label>
 
-      <label for="text">
-        <input type="radio" id="text" value="text" name="text"> Text
-      </label>
+          <label for="text">
+            <input type="radio" id="text" value="text" name="format"> Text
+        </label>
+      </div>
+      
 
       <button type="submit" id="submit-button">Submit</button>
     </form>

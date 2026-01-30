@@ -1,9 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
 body {
-  background-color: lightgray;
+  background-color: rgb(226, 226, 226);
+}
+
+#com {
+  grid-area: com;
+}
+
+#emaillabel {
+  grid-area: email;
+}
+
+#first {
+  grid-area: first;
+}
+
+#format input, #format label, #format p{
+  display: inline;
+  margin: 0.2rem;
+}
+
+form {
+  display: grid;
+  grid-template-areas:
+  "first first last last job job"
+  "com com link link email email"
+  "met met met other other other"
+  "mess mess mess mess mess mess"
+  "list list list list list list"
+  "for for for for for for"
+  "but but but but but but";
+
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-rows: auto;
+}
+
+#format {
+  grid-area: for;
+  margin-bottom: 0.8rem;
+}
+
+#format input, #mlist {
+  height: 1rem;
+  width: auto;
+}
+
+form label, #format p {
+  margin: 0.7rem 0.5rem;
+  display: block;
+  padding-bottom: .2rem;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+h1 {
+  color: rgb(36, 36, 36);
+  text-align: center;
+  margin-bottom: 1rem;
+
+}
+
+input, select, textarea {
+  display: block;
+  margin-top: 0.4rem;
+  width: 100%;
+}
+
+input, select {
+  height: 2rem;
+}
+
+input, select, textarea {
+  border: 1px solid rgb(226, 226, 226);
+  border-radius: 5px;
+}
+
+#job {
+  grid-area: job;
+}
+
+#last {
+  grid-area: last;
+}
+
+#linklabel {
+  grid-area: link;
 }
 
 main {
-  width: 70%;
-  margin: auto;
+  background-color: white;
+  border-radius: 10px;
+  margin: 1.5rem auto;
+  padding: 1.5em 3em;
+  width: 40%;
 }
+
+#meetlabel {
+  grid-area: met;
+}
+
+#messlabel {
+  grid-area: mess;
+}
+
+#mlabel {
+  
+  grid-area: list;
+}
+
+#mlist {
+  display: inline;
+}
+
+select {
+  padding-left: 0.5rem;
+}
+
+#otherlabel {
+  grid-area: other;
+}
+
+select {
+  background-color: white;
+}
+
+#submit-button {
+  background-color: rgb(54, 170, 54);
+  grid-area: but;
+  padding: 0.5rem 1rem;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  width: auto;
+  justify-self: left;
+}
+
+
 
