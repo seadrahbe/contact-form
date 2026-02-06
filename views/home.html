@@ -7,27 +7,33 @@
 
   <link rel="icon" href="/img/star.png">
   <link rel="stylesheet" href="/styles/style.css">
+  <script src="/js/contact.js" defer></script>
 
 </head>
 
 
 <body>
-
   <main>
 
     <h1>Contact Form</h1>
 
-    <form>
+    <form id="contact-form">
 
 
       <label id="first" for="fname">
       First Name
           <input type="text" id="fname" name="fname">
+          <span class = "err" id = "err-fname">
+           First name is required
+        </span>
       </label>
 
       <label id="last" for="lname">
-      Last Name
+      Last Name 
           <input type="text" id="lname" name="lname">
+          <span class = "err" id = "err-lname">
+          Last name is required
+        </span>
       </label>
 
       <label id="job" for="jtitle">
@@ -43,15 +49,25 @@
       <label id="linklabel" for="linkedin">
       LinkedIn URL
           <input type="text" id="linkedin" name="linkedin">
+          <span class = "err" id = "err-linkedin">
+          Must be in format: "https://linkedin.com/in/xxx"
+        </span>
       </label>
 
       <label for="email" id="emaillabel">
       Email Address
           <input type="text" id="email" name="email">
+          <span class = "err" id = "err-email">
+          Email must be in format "xxxx@xxx.xxx"
+        </span>
+        <span class = "err" id = "err-email2">
+          Email is required for mailing list
+        </span>
       </label>
 
       <label for="meet" id = "meetlabel">
         How did we meet?
+        <span class = "err" id="err-meet">This field is required.</span>
         <select id="meet" name="meet">
           <option value="none">Please select</option>
           <option value="coworker">Coworker</option>
@@ -59,12 +75,14 @@
           <option value="friend">Mutual Friend</option>
           <option value="recruit">Recruiting Event</option>
           <option value="social">Social Media / Online</option>
+          <option value="other">Other</option>
         </select>
       </label>
 
       <label for="other" id = "otherlabel">
       Other (please specify)
           <input type="text" id="other" name="other">
+          <span class = "err" id="err-other">This field is required.</span>
       </label>
 
       <label for="message" id = "messlabel">Message

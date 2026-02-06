@@ -16,8 +16,19 @@ body {
   grid-area: email;
 }
 
+.err {
+  color: darkred;
+  display: none;
+  font-weight: 100;
+}
+
+
 #first {
   grid-area: first;
+}
+
+#format {
+  display: block;
 }
 
 #format input, #format label, #format p{
