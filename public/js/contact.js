@@ -4,6 +4,16 @@
   mlist.addEventListener('change', () => {
     format.style.display = mlist.checked ? "block" : "none";
   });
+
+  let otherLabel = document.getElementById("otherlabel");
+  meet.addEventListener("change", (e) => {
+    if (e.target.value === "other") {
+      otherLabel.style.display = "block";
+    } else {
+      otherLabel.style.display = "none";
+    }
+  });
+  
   
   document.getElementById("contact-form").onsubmit = () => {
   
@@ -56,12 +66,14 @@
     }
 
   // Validate "how we met"
-  let meet = document.getElementById("meet").value;
+  let meet = document.getElementById("meet");
+
+  let meetVal = document.getElementById("meet").value;
   let other = document.getElementById("other").value;
-  if(meet == "none") {
+  if(meetVal == "none") {
       document.getElementById("err-meet").style.display = "block";
       isValid = false;
-  } else if (meet == "other" && !other) {
+  } else if (meetVal == "other" && !other) {
       document.getElementById("err-other").style.display = "block";
       isValid = false;
   }

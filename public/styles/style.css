@@ -134,6 +134,7 @@ select {
 
 #otherlabel {
   grid-area: other;
+  display: none;
 }
 
 select {
