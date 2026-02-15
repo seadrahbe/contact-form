@@ -45,8 +45,8 @@ form {
   "mess mess mess mess mess mess"
   "list list list list list list"
   "for for for for for for"
-  "but but but but but but";
-
+  "but but but but but but"
+  "gith gith gith gith gith gith";
   grid-template-columns: repeat(6, minmax(0, 1fr));
   grid-template-rows: auto;
 }
@@ -67,6 +67,12 @@ form label, #format p {
   padding-bottom: .2rem;
   font-weight: bold;
   font-size: 0.9rem;
+}
+
+#gith {
+  grid-area: gith;
+  margin: auto;
+  text-align: center;
 }
 
 h1 {
