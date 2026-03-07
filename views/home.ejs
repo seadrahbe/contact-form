@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>HTML Resume</title>
+
+  <!-- Fav Icon -->
+  <link rel="icon" href="img/flower_icon.webp">
+
+  <!-- Stylesheets-->
+  <link rel="stylesheet" href="styles/universal.css">
+  <link rel="stylesheet" href="styles/resume.css">
+  <link rel="stylesheet" href="styles/partials/header.css">
+
+  <!-- Font Garamond -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <%- include('partials/header.ejs') %>
+
+  <main>
+    <div id="resume_header">
+      <div class="circle-crop">
+        <img src="img/Seadrah_BW_2.jpg" alt="A black and white, smiling photo of Seadrah." width="400">
+      </div>
+
+      <section id="contact">
+        <h1>Seadrah Z. Berger</h1>
+        <h2>(253) 329-4307</h2>
+        <h2>seadrahberger@gmail.com</h2>
+        <h2><a href="https://github.com/seadrahbe">GitHub</a> <a href="www.linkedin.com/in/seadrahbe">LinkedIn</a></h2>
+      </section>
+    </div>
+        
+    <section id="projects">
+      <h3>PROJECTS</h3>
+      <h4>Event History Page – </h4>
+      <a href="https://datastory.greenriverdev.com/SDEV280/USDGC/landing.php">
+        https://datastory.greenriverdev.com/SDEV280/USDGC/landing.php</a> 
+      <p>This is a data-driven event history webpage for Professional Disc Golf Association. 
+        Performed role of product owner on a team of developers and collaborated using Agile 
+        methodology to push features and meet sprint goals.</p>
+        
+      <h4>About Me Website – </h4> 
+      <a href="https://seadrahbe.github.io/final_project_SDEV106/">
+        https://seadrahbe.github.io/final_project_SDEV106/</a>
+      <p>This website, coded with HTML & CSS, details projects, academic history, and goals. 
+      It utilizes media queries to adapt to a multitude of screen dimensions. </p>
+      
+      <h4>Sentence Generator – </h4>
+      <a href="https://github.com/seadrahbe/text_generator/blob/main/AIGeneratorBackend.java">
+        https://github.com/seadrahbe/text_generator/blob/main/AIGeneratorBackend.java</a>
+      <p>This program, coded in Java, processes string data from .txt files to generate randomized sentences.</p>
+    </section>
+
+    <section id="skills">
+
+      <h3>SKILLS</h3>
+      
+      <h4>Code:</h4>
+      <ul>
+        <li>Java (JUnit)</li>, 
+        <li>Python (NumPy, pandas, seaborn, matplotlib)</li>, 
+        <li>JavaScript (Node.js, EJS)</li>, 
+        <li>C++ (Butano)</li>,
+        <li>PHP</li>, 
+        <li>SQL</li>, 
+        <li>R</li>, 
+        <li>HTML</li>, 
+        <li>CSS</li></ul>
+
+      <h4>General:</h4>
+      <ul>
+        <li>Object-Oriented Programming</li>, 
+        <li>Full-Stack Web Development</li>, 
+        <li>Agile Methodology</li>, 
+        <li>Customer Relations</li>, 
+        <li>Data Analytics</li>, 
+        <li>Spanish</li>
+      </ul>
+
+      <h4>Software:</h4>
+      <ul>
+        <li>VSCode</li>, 
+        <li>Tableau</li>,
+        <li>Git/GitHub</li>,
+        <li>phpMyAdmin</li>,
+        <li>mySQL</li>
+      </ul>
+
+    </section>
+
+    <section id="education">
+      <h3>EDUCATION</h3>
+      <h4>Green River College, Auburn, WA</h4>
+      <ul>
+        <li>Associates of Applied Science in Data Analytics & Software Development (Dec. 2025)</li>
+        <li>Bachelor of Applied Science in Software Development (June 2027) (in-progress)</li>
+      </ul>
+    </section>
+      
+    <section id="activities">
+      <h3>ACTIVITIES</h3>
+      
+      <h4>Women in Tech Club – President (June 2025 - Present)</h4>
+      <ul>
+        <li>Delegated tasks and conducted progress check-ins.</li>
+        <li>Facilitated activities, workshops, and field trips.</li>
+        <li>Coordinated events with other departments and clubs.</li>
+      </ul>
+      
+      <h4>Social Media Manager (Oct. 2024 – June 2025)</h4>
+      <ul>
+        <li>Diversified marketing with short-form content.</li>
+        <li>Managed weekly emails, posts, and flyers. </li>
+        <li>Performed outreach duties to acquire new members (tabling, posters, boards).</li>
+      </ul>
+        
+      <h4>Tech Fee Committee – Vice Chairperson (Dec. 2024 – May 2025) </h4>
+      <ul>
+        <li>Developed budget to allocate student tech fee.</li>
+        <li>Measured diverse student perspectives and needs.</li>
+      </ul>
+
+    </section>
+
+    <section id="experience">
+
+      <h3>EXPERIENCE</h3>
+        <h4>ODEI Office Assistant (Aug. 2025 – Present) | Green River College – Auburn, WA</h4>
+        <ul>
+          <li>Participated in extensive student leadership training and team building activities.</li>
+          <li>Assisted in planning and implementing inclusive events and workshops on and off-campus.</li>
+          <li>Maintained records for the book loan program.</li>
+          <li>Developed trendy content for social media to promote events.</li>
+        </ul>
+
+        <h4>Welcome Desk Assistant (Mar. 2024 - Present) | Green River College – Auburn, WA</h4>
+        <ul>
+          <li>Guided students through admission, provided detailed assistance regarding academic programs.</li>
+          <li>Led campus tours and tabled for outreach events with a warm and welcoming demeanor.</li>
+          <li>Managed phone calls, Zoom lobby, and email correspondence on behalf of the Welcome Desk.</li>
+          <li>Updated records of procedures, resources, and various programs and departments, and maintained familiarity with college policies such as FERPA.</li>
+        </ul>
+        
+        <h4>Canvassing Team Leader (Oct. 2023 – Dec. 2023) | Donor Voice Canvass – Seattle, WA</h4>
+        <ul>
+          <li>Managed a team of canvassers and fostered success through weekly progress check-ins and daily trainings.</li>
+          <li>Utilized canvassing software to strategically section maps, narrowing in on likely donor areas.</li>
+          <li>Assisted canvassing expansion to Tacoma area.</li>
+        </ul>
+          
+        <h4>Fundraising Canvasser (June 2023 – Dec. 2023) | Donor Voice Canvass – Seattle, WA</h4>
+
+    </section>
+  </main>
+</body>
+</html>

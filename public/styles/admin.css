@@ -1,0 +1,24 @@
+.card {
+  flex: 1 1 20rem;
+  min-width: 15rem;
+  max-width: 23rem;
+}
+
+#cards {
+  display: inline-flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+main {
+  padding: 1rem 1.5rem;
+}
+
+
+h1 {
+  padding: 0.1rem;
+  margin-bottom: 1.5rem;
+}
+

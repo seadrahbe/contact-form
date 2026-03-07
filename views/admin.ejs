@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles/universal.css">
+  <link rel="stylesheet" href="styles/partials/header.css">
+  <link rel="stylesheet" href="styles/admin.css">
+
+  <!-- Font Garamond -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <%# Populate header from views/partials/header.ejs %>
+  <%- include('partials/header.ejs') %>
+
+  <main>
+
+    <h1>Submission History</h1>
+
+    <div id="cards">
+      <%# Check if there are contacts %>
+      <% if (Object.keys(contacts).length != 0) { %>
+
+        <%# Create card for every contact in array (Newest -> Oldest) %>
+        <% for (let i = contacts.length - 1; i >= 0; i--) { %>
+
+          <div class = "card">
+            <ul>
+              <li><strong>Name:</strong>&nbsp;<%= contacts[i].fname + " " + contacts[i].lname %></li>
+              <li><strong>Job Title:</strong>&nbsp;<%= contacts[i].title ? contacts[i].title : "N/A" %></li>
+              <li><strong>Company:</strong>&nbsp;<%= contacts[i].company ? contacts[i].company : "N/A" %></li>
+              <li><strong>LinkedIn:</strong>&nbsp;<%= contacts[i].linkedin ? contacts[i].linkedin : "N/A" %></li>
+              <li><strong>Email:</strong>&nbsp;<%= contacts[i].email ? contacts[i].email : "N/A" %></li>
+              <li><strong>Met via:</strong>&nbsp;<%= (contacts[i].met) != "other" ? contacts[i].met : contacts[i].other %></li>
+              <li><strong>Comments:</strong>&nbsp;<%= contacts[i].message ? contacts[i].message : "N/A" %> </li>
+              <li><strong>Email Format:</strong>&nbsp;<%= contacts[i].format ? contacts[i].format : "N/A"%> </li>
+              <li><strong>Submission Time:</strong>&nbsp;<%= contacts[i].timestamp %></li>
+          </div>
+        <% } %>
+
+      <% } else { %>
+
+          <div id = "not-found">
+            <p>No submissions found.</p>
+          </div>
+
+      <% } %>
+
+    </div>
+  </main>
+  
+</body>
+
+</html>

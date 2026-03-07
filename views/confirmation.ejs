@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles/universal.css">
+  <link rel="stylesheet" href="styles/partials/header.css">
+  <link rel="stylesheet" href="styles/confirmation.css">
+
+    <!-- Font Garamond -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <%- include('partials/header.ejs') %>
+
+  <main>
+    <h1>Submission confirmed! Thank you.</h1>
+
+      <ul id= "fields">
+        <li><strong>Name:</strong> &nbsp; <%= contact.fname + " " + contact.lname %></li>
+        <li><strong>Job Title:</strong> &nbsp; <%= (contact.title) ? contact.title : "N/A"  %></li>
+        <li><strong>Company:</strong> &nbsp; <%= (contact.company) ? contact.company : "N/A"  %></li>
+        <li><strong>LinkedIn:</strong> &nbsp; <%= (contact.linkedin) ? contact.linkedin : "N/A" %></li>
+        <li><strong>Email:</strong> &nbsp; <%= (contact.email) ? contact.email : "N/A"  %></li>
+        <li><strong>Met via:</strong> &nbsp; <%= (contact.met) != "other" ? contact.met : contact.other %></li>
+        <li><strong>Comments:</strong> &nbsp; <%= (contact.message) ? contact.message : "N/A"  %> </li>
+        <li><strong>Email Format:</strong> &nbsp; <%= (contact.format) ? contact.format : "N/A"  %> </li>
+        <li><strong>Submission Time:</strong> &nbsp; <%= contact.timestamp %></li>
+      </ul>
+
+    <a href="/">Return home</a>
+  </main>
+  
+</body>
+</html>

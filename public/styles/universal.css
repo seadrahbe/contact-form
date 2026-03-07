@@ -1,0 +1,54 @@
+/* VARIABLES */
+
+:root {
+  --bg-color: rgb(61, 78, 33);
+  --link-color: rgb(139, 64, 99);
+}
+
+/* UNIVERSAL STYLING */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GENERAL STYLES (alphabetical order) */
+
+a {
+  color: darkblue;
+}
+
+a:hover {
+  color:var(--link-color);
+  font-style: italic;
+}
+
+body {
+  font-size: 1rem;
+  background-color: var(--bg-color);
+  font-family: "EB Garamond", serif;
+}
+
+h1 {
+  font-size: 2.2rem;
+  letter-spacing: 0.1rem;
+}
+
+h2, h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.7rem;
+  letter-spacing: 0.1rem;
+}
+
+li {
+  margin-left: 2rem;
+  list-style-image: url("../img/flower_icon_bullet.webp");
+}
+
+main {
+  width: 60%;
+  margin: auto;
+  background-color: rgb(255, 255, 255);
+  padding: 1.5rem 2rem;
+}
