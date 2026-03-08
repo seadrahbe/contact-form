@@ -35,7 +35,7 @@
             case "social": %> Social Media / Online <% break;
             case "mentor": %> Mentors in Tech <% break;
             case "coworker": %> Coworker <% break;
-            case "other": %> <%= contact.other %> <% break;
+            default: %> <%= contact.met %> <% break;
           } %>
         </li>
         <li><strong>Comments:</strong> &nbsp; <%= (contact.message) ? contact.message : "N/A"  %> </li>

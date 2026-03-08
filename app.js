@@ -120,6 +120,8 @@ app.post('/submit-contact', async(req, res) => {
     timestamp: new Date()
   };
 
+  console.log(contact.met);
+
   // Send user to thank you page
   res.render("confirmation", { contact });
 
