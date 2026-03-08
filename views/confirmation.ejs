@@ -28,7 +28,16 @@
         <li><strong>Company:</strong> &nbsp; <%= (contact.company) ? contact.company : "N/A"  %></li>
         <li><strong>LinkedIn:</strong> &nbsp; <%= (contact.linkedin) ? contact.linkedin : "N/A" %></li>
         <li><strong>Email:</strong> &nbsp; <%= (contact.email) ? contact.email : "N/A"  %></li>
-        <li><strong>Met via:</strong> &nbsp; <%= (contact.met) != "other" ? contact.met : contact.other %></li>
+        <li><strong>Met via:</strong> &nbsp; 
+          <% switch(contact.met) { 
+            case "recruit": %> Recruiting Event <% break;
+            case "friend": %> Mutual Friend <% break;
+            case "social": %> Social Media / Online <% break;
+            case "mentor": %> Mentors in Tech <% break;
+            case "coworker": %> Coworker <% break;
+            case "other": %> <%= contact.other %> <% break;
+          } %>
+        </li>
         <li><strong>Comments:</strong> &nbsp; <%= (contact.message) ? contact.message : "N/A"  %> </li>
         <li><strong>Email Format:</strong> &nbsp; <%= (contact.format) ? contact.format : "N/A"  %> </li>
         <li><strong>Submission Time:</strong> &nbsp; <%= contact.timestamp %></li>

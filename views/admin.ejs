@@ -39,7 +39,7 @@
               <li><strong>Company:</strong>&nbsp;<%= contacts[i].company ? contacts[i].company : "N/A" %></li>
               <li><strong>LinkedIn:</strong>&nbsp;<%= contacts[i].linkedin ? contacts[i].linkedin : "N/A" %></li>
               <li><strong>Email:</strong>&nbsp;<%= contacts[i].email ? contacts[i].email : "N/A" %></li>
-              <li><strong>Met via:</strong>&nbsp;<%= (contacts[i].met) != "other" ? contacts[i].met : contacts[i].other %></li>
+              <li><strong>Met via:</strong>&nbsp;<%= contacts[i].met %></li>
               <li><strong>Comments:</strong>&nbsp;<%= contacts[i].message ? contacts[i].message : "N/A" %> </li>
               <li><strong>Email Format:</strong>&nbsp;<%= contacts[i].format ? contacts[i].format : "N/A"%> </li>
               <li><strong>Submission Time:</strong>&nbsp;<%= contacts[i].timestamp %></li>
