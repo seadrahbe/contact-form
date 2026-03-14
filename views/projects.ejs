@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles/universal.css">
+  <link rel="stylesheet" href="styles/partials/header.css">
+  <link rel="stylesheet" href="styles/projects.css">
+
+    <!-- Font Garamond -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+ <%- include('partials/header.ejs') %>
+  <main>
+
+    <section class = 'project'>
+      <figure>
+        <img alt = "GIF of Rover Landing gameplay. A pixelated spacecraft lands upon a shiny metal 
+        landing pad atop a brown and purple planet.">
+      </figure>
+
+      <figcaption>
+        <h3>Rover Landing</h3>
+        <strong><a href="https://grc-cohort-23.github.io/microjam/">Playable Game</a> | <a href="https://github.com/JamHudson/gr-space-microjam">GitHub Repo</a></strong>
+        <br>
+        <em>GameBoy Advance Game - C++ & Butano</em>
+        <br>
+        Worked on a team of 3 in conjunction with a class of over 20 students to deliver 
+        this Rover Landing minigame in our space-themed GBA Microjam. Assisted in implementation
+        of sprites, visual warnings, and landing mechanic while coordinating development through
+        Git branches.
+
+        * Hint: To jump straight to the "Rover Landing" game, navigate down to "debug" and select 
+        "Rover Landing."
+      </figcaption>
+    </section>
+
+     <section class = 'project'>
+      <figure>
+        <img src= "/img/pizza_ss.png" alt = "A screenshot of the pizza order form page, which features a red and white
+        color scheme and an image of a delivery man holding pizza.">
+      </figure>
+
+      <figcaption>
+        <h3>Pizza Order Form</h3>
+        <strong><a href="http://134.199.226.229:3000/">Webpage</a> | <a href="https://github.com/seadrahbe/pizza">GitHub Repo</a></strong>
+        <br>
+        <em>Input-Vaidated Web Form - Node.js (express, nodemon, dotenv), EJS, MySQL, 
+          HTML + CSS + JS, hosted on Linux VM via DigitalOcean</em>
+        <br>
+        Created an pizza order form using Node.js which connects via parameterized queries to
+        a MySQL database. Features both client-side and server-side input validation.
+      </figcaption>
+    </section>
+
+    <section class = 'project'>
+      <figure>
+        <img alt = "GIF of Coin Chase gameplay. A pixelated pink piggy bank chases after an 
+        escaping coin while evading a spinning pixel hammer.">
+      </figure>
+
+      <figcaption>
+        <h3>Coin Chase</h3>
+        <em>GameBoy Advance Game - C++ & Butano</em>
+        <br>
+        In conjunction with teammates, coded a simple game about evading a hammer as 
+        a piggy bank and collecting coins. 
+      </figcaption>
+    </section>
+
+  </main>
+</body>
+</html>

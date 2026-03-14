@@ -61,6 +61,13 @@ app.get('/contact', (req, res) => {
 
 });
 
+//  Projects
+app.get('/projects', (req, res) => {
+
+    res.render("projects");
+
+});
+
 //  Confirmation
 app.get('/thank-you', (req, res) => {
 
